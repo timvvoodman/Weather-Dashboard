@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <h2>Weather Dashboard</h2>
+      </div>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <div style="margin-bottom: 20px">
+            <h4>Search for a City:</h4>
+            <input id="searchField" type="text" placeholder="" />
+            <button id="search" type="button" class="btn btn-primary">
+              Search
+            </button>
+          </div>
+          <div id="history">
+            <!--Search Hisotry list divs go here-->
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div id="todayWeather" class="row">
+            <div class="col todayWeather">
+              <!--Selected City forcast today: temp, humidity, wind speed, uv index-->
+              <div id="currentCity">
+                <h2>City 8/15/2020</h2>
+              </div>
+              <div class="current" id="currentTemp">Temperature: 80 deg F</div>
+              <div class="current" id="currentHumid">Humidity: 50%</div>
+              <div class="current" id="currentWind">Wind Speed: 4.7 MPH</div>
+              <div class="current" id="currentUv">UV Index: 10</div>
+            </div>
+          </div>
+
+          <div class="row forcast">
+            <h2>5-Day Forcast</h2>
+          </div>
+          <div class="row">
+            <div class="col-sm futureDay">
+              <div>Date</div>
+              <div><img src="https://via.placeholder.com/20" /></div>
+              <div>Temp</div>
+              <div>humidity</div>
+            </div>
+            <div class="col-sm futureDay">
+              <div>Date</div>
+              <div><img src="https://via.placeholder.com/20" /></div>
+              <div>Temp</div>
+              <div>humidity</div>
+            </div>
+            <div class="col-sm futureDay">
+              <div>Date</div>
+              <div><img src="https://via.placeholder.com/20" /></div>
+              <div>Temp</div>
+              <div>humidity</div>
+            </div>
+            <div class="col-sm futureDay">
+              <div>Date</div>
+              <div><img src="https://via.placeholder.com/20" /></div>
+              <div>Temp</div>
+              <div>humidity</div>
+            </div>
+            <div class="col-sm futureDay">
+              <div>Date</div>
+              <div><img src="https://via.placeholder.com/20" /></div>
+              <div>Temp</div>
+              <div>humidity</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Script links-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="script.js" defer></script>
+</html>
