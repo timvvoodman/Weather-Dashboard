@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!--Bootstrap-->
+    <!--Bootstrap/BootSwatch-->
+
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/flatly/bootstrap.min.css"
     />
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
@@ -20,41 +22,61 @@
     </header>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-4">
-          <div style="margin-bottom: 20px">
-            <h4>Search for a City:</h4>
-            <input id="searchField" type="text" placeholder="" />
-            <button id="search" type="button" class="btn btn-primary">
-              Search
-            </button>
+        <div class="col-sm-4 text-center">
+          <div>
+            <h4>Search City:</h4>
+            <input
+              style="margin: 0.625rem"
+              id="searchField"
+              type="text"
+              placeholder="City"
+            />
+            <div>
+              <button id="search" type="button" class="btn btn-success">
+                Search
+              </button>
+            </div>
           </div>
-          <div id="history">
-            <!--Search Hisotry list divs go here-->
+          <div>
+            <ul class="searchHistory">
+              <!--Search Hisotry list divs go here-->
+            </ul>
           </div>
         </div>
         <div class="col-sm-8">
-          <div id="todayWeather" class="row">
-            <div class="col todayWeather">
+          <div class="row currentWeatherContainer">
+            <div class="col">
               <!--Selected City forcast today: temp, humidity, wind speed, uv index-->
-              <div id="currentCity">
-                <h2>City 8/15/2020</h2>
+              <div class="row">
+                <div class="col text-center" id="todayWeather"></div>
               </div>
-              <div class="current" id="currentTemp">Temperature: 80 deg F</div>
-              <div class="current" id="currentHumid">Humidity: 50%</div>
-              <div class="current" id="currentWind">Wind Speed: 4.7 MPH</div>
-              <div class="current" id="currentUv">UV Index: 10</div>
+              <div class="row">
+                <div
+                  class="col-md-3 current text-center"
+                  id="currentTemp"
+                ></div>
+                <div
+                  class="col-md-3 current text-center"
+                  id="currentHumid"
+                ></div>
+                <div
+                  class="col-md-3 current text-center"
+                  id="currentWind"
+                ></div>
+                <div class="col-md-3 current text-center" id="currentUv"></div>
+              </div>
             </div>
           </div>
 
-          <div class="row forcast">
+          <div class="row forcast text-center">
             <h2>5-Day Forcast</h2>
           </div>
           <div class="row">
             <div class="col-sm futureDay">
-              <div>Date</div>
+              <p>Date</p>
               <div><img src="https://via.placeholder.com/20" /></div>
-              <div>Temp</div>
-              <div>humidity</div>
+              <p>Temp</p>
+              <p>humidity</p>
             </div>
             <div class="col-sm futureDay">
               <div>Date</div>

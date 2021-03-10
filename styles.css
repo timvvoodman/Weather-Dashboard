@@ -1,16 +1,28 @@
+body {
+  background-color: #1b262c;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: white;
+}
+
 .header {
   width: 100%;
-  padding: 10px;
+  padding: 0.625rem;
   font-size: large;
   color: white;
-  background-color: black;
+  background-color: #0f4c75;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .searchList {
-  padding: 13px;
-  color: grey;
+  padding: 0.813rem;
+  color: white;
   border: 1px black;
 }
 
@@ -20,26 +32,30 @@
 }
 
 #todayWeather {
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
-  margin-right: 10px;
-  padding: 10px;
+  margin-right: 0.625rem;
+  padding: 0.625rem;
+  color: white;
+}
+
+.currentWeatherContainer {
+  border: 1px solid white;
+  border-radius: 00.313rem;
+  margin: 0.625rem;
 }
 
 .current {
-  padding: 15px;
+  padding: 0.938rem;
 }
 
 .forcast {
-  margin-top: 15px;
+  margin-top: 2rem;
 }
 
 .futureDay {
-  background-color: dodgerblue;
+  background-color: #3282b8;
   border-style: hidden;
-  border-radius: 5px;
-  margin: 10px;
-  padding: 5px;
+  border-radius: 0.313rem;
+  margin: 0.625rem;
+  padding: 0.313rem;
   color: white;
 }
